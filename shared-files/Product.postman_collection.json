@@ -1,0 +1,159 @@
+{
+	"id": "27b8b44a-5607-3aa7-0b2b-5a4e008028c2",
+	"name": "Product",
+	"description": "",
+	"order": [
+		"de14c5ec-423f-ee79-a006-d8a595267556",
+		"274a9d06-d3a7-a7a8-e7bf-1664f83b997f",
+		"34c7027c-cf24-407a-3e46-6293a5896908",
+		"3a4027ac-8940-f48d-bdc9-a5349b7bd623"
+	],
+	"folders": [],
+	"timestamp": 1493476873110,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "274a9d06-d3a7-a7a8-e7bf-1664f83b997f",
+			"headers": "",
+			"url": "http://product.dev/api/product",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "27b8b44a-5607-3aa7-0b2b-5a4e008028c2",
+			"data": [
+				{
+					"key": "name",
+					"value": "Product 1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price",
+					"value": "23123",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_date",
+					"value": "2017-04-30 20:37:4",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "http://product.dev/api/product",
+			"description": "Add product",
+			"descriptionFormat": "html",
+			"time": 1493492243292,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "34c7027c-cf24-407a-3e46-6293a5896908",
+			"headers": "",
+			"url": "http://product.dev/api/product/unbind-voucher/1/2",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "PATCH",
+			"collectionId": "27b8b44a-5607-3aa7-0b2b-5a4e008028c2",
+			"data": [
+				{
+					"key": "product_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "voucher_id",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "http://product.dev/api/product/unbind-voucher/1/2",
+			"description": "Unbind voucher from product",
+			"descriptionFormat": "html",
+			"time": 1493492615973,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "3a4027ac-8940-f48d-bdc9-a5349b7bd623",
+			"headers": "",
+			"url": "http://product.dev/api/product/bind-voucher/2/1",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "PATCH",
+			"collectionId": "27b8b44a-5607-3aa7-0b2b-5a4e008028c2",
+			"data": [
+				{
+					"key": "product_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "voucher_id",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "http://product.dev/api/product/bind-voucher/1/2",
+			"description": "Bind voucher from product",
+			"descriptionFormat": "html",
+			"time": 1493492684312,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "de14c5ec-423f-ee79-a006-d8a595267556",
+			"headers": "",
+			"url": "http://product.dev/api/product",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "Product 1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price",
+					"value": "23123",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "end_date",
+					"value": "2017-04-30 20:37:4",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1493492221400,
+			"name": "http://product.dev/api/voucher",
+			"description": "Add voucher",
+			"collectionId": "27b8b44a-5607-3aa7-0b2b-5a4e008028c2",
+			"responses": []
+		}
+	]
+}
