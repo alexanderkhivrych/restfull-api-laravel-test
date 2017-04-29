@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'SiteController@index');
+Route::delete('/product/delete/{id}', 'SiteController@delete');
