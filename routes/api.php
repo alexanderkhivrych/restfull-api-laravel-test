@@ -13,5 +13,5 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::resource('product', 'ProductController');
-Route::resource('voucher', 'VoucherController');
+Route::resource('product', 'Api\ProductController');
+Route::resource('voucher', 'Api\VoucherController');
