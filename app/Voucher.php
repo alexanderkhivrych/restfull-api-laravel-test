@@ -20,4 +20,9 @@ class Voucher extends Model
     {
         return $this->hasOne('App\Discount');
     }
+
+    public function products()
+    {
+        return $this->belongsToMany('App\Discount');
+    }
 }

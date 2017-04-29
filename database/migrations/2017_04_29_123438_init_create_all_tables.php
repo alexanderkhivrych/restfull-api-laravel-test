@@ -36,7 +36,7 @@ class InitCreateAllTables extends Migration
             $table->timestamp('updated_at')->useCurrent();
         });
 
-        Schema::create('products_vouchers', function (Blueprint $table) {
+        Schema::create('product_voucher', function (Blueprint $table) {
             $table->integer('product_id')->unsigned()->nullable(false);
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
 

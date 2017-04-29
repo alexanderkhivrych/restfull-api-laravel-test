@@ -16,7 +16,7 @@ class ApiController extends Controller
      *
      * @return Response
      */
-    public function success($code, $data = [])
+    protected function success($code, $data = [])
     {
         return response()->json([
             'data' => $data
@@ -31,7 +31,7 @@ class ApiController extends Controller
      *
      * @return Response
      */
-    public function error($code, $message)
+    protected function error($code, $message)
     {
         return response()->json([
             'error' => [

@@ -13,7 +13,6 @@ class VoucherController extends ApiController
      * Create voucher
      *
      * @param Request $request
-     *
      * @return Response
      */
     public function store(Request $request)
@@ -51,8 +50,8 @@ class VoucherController extends ApiController
 
     /**
      * Update voucher
-     ** @param integer $id
      *
+     ** @param integer $id
      * @return Response
      */
     public function update($id)
@@ -64,7 +63,6 @@ class VoucherController extends ApiController
      * Delete voucher
      *
      * @param integer $id
-     *
      * @return Response
      */
     public function destroy($id)
