@@ -29,7 +29,7 @@
             <tr>
                 <td>{{ $product->id }}</td>
                 <td>{{ $product->name }}</td>
-                <td>{{ $product->price }}</td>
+                <td>{{ $product->getPrice() }}</td>
                 <td>
                  {{ Form::open(['action' => ['SiteController@delete', $product->id], 'method' => 'DELETE'])}}
                     <button class="btn btn-primary">Buy</button>

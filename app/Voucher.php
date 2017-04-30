@@ -4,6 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Class Voucher
+ *
+ * @property Discount discount
+ * @property string start_date
+ * @property  string end_date
+ * @package App
+ */
 class Voucher extends Model
 {
     /**
@@ -18,11 +26,11 @@ class Voucher extends Model
      */
     public function discount()
     {
-        return $this->hasOne('App\Discount');
+        return $this->belongsTo('App\Discount');
     }
 
     public function products()
     {
-        return $this->belongsToMany('App\Discount');
+        return $this->belongsToMany('App\Product');
     }
 }
